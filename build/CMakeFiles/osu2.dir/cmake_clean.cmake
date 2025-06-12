@@ -1,0 +1,39 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o"
+  "CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o.d"
+  "CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o"
+  "CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o"
+  "CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o"
+  "CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o"
+  "CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o"
+  "CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/generators/next_position.cpp.o"
+  "CMakeFiles/osu2.dir/src/generators/next_position.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o"
+  "CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o"
+  "CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o"
+  "CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o"
+  "CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/logical/Tap.cpp.o"
+  "CMakeFiles/osu2.dir/src/logical/Tap.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/main.cpp.o"
+  "CMakeFiles/osu2.dir/src/main.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o"
+  "CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/utils/shader.cpp.o"
+  "CMakeFiles/osu2.dir/src/utils/shader.cpp.o.d"
+  "osu2"
+  "osu2.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C CXX)
+  include(CMakeFiles/osu2.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

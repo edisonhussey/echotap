@@ -1,0 +1,3 @@
+/Users/edisonhussey/Desktop/osu2/build/CMakeFiles/osu2.dir
+/Users/edisonhussey/Desktop/osu2/build/CMakeFiles/edit_cache.dir
+/Users/edisonhussey/Desktop/osu2/build/CMakeFiles/rebuild_cache.dir
