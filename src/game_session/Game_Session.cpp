@@ -44,26 +44,3 @@ void Game_Session::click_x_y(float x, float y, float time) {
 
 
 
-
-
-// void Game_Session::click_x_y(float x, float y, float time) {
-
-//     std::vector <Tap> taps_in_window = beatmap->getTapsInWindow(time - 4.0f, time + 4.0f);
-
-    
-
-//     // Convert screen coordinates to normalized coordinates
-//     // float norm_x = (x / screenWidth) * 2.0f - 1.0f; // Convert to [-1, 1]
-//     // float norm_y = 1.0f - (y / screenHeight) * 2.0f; // Invert Y axis and convert to [-1, 1]
-
-//     // Handle click logic here
-//     // std::cout << "Click at normalized coordinates: (" << norm_x << ", " << norm_y << ")\n";
-    
-//     // Example: Check if the click is within a certain area or trigger an action
-//     // This is where you would implement your game logic based on the click position
-
-
-
-
-
-// }

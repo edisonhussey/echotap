@@ -1,22 +1,3 @@
-// #pragma once
-
-// #include "Audio_Manager.h"
-// #include <GLFW/glfw3.h>
-
-
-// class Input_Manager {
-// public:
-//     static void Init(GLFWwindow* win);
-//     static void Update();
-//     static void SetAudio(Audio_Manager* audio);
-
-//     static bool IsKeyPressed(int key);
-//     static void HandleInputs(); // Where you use audio
-
-// private:
-//     static GLFWwindow* window;
-//     static Audio_Manager* audioSystem;
-// };
 
 
 #pragma once

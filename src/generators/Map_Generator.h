@@ -29,17 +29,5 @@ class Map_Generator {
 
     };
 
-// class next_position_generator {
-//     public:
-//         next_position_generator();//write a way to init 2 random starter 
-//         ~next_position_generator();
-//         std::vector<float> get_next_position();
-//     private:
-
-//         // float[4] previous_positions; class variable holds 2 prev positions continually updated
- 
-// };
-
-
 
 #endif

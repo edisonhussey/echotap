@@ -1,28 +1,3 @@
-// #include "Input_Manager.h"
-// #include "Audio_Manager.h" // Now we can include it
-// #include <GLFW/glfw3.h>
-
-// GLFWwindow* Input_Manager::window = nullptr;
-// Audio_Manager* Input_Manager::audioSystem = nullptr;
-
-// void Input_Manager::Init(GLFWwindow* win) {
-//     window = win;
-// }
-
-// void Input_Manager::SetAudio(Audio_Manager* audio) {
-//     // audioSystem = audio;
-// }
-
-// void Input_Manager::Update() {
-//     glfwPollEvents();
-// }
-
-// void Input_Manager::HandleInputs() {
-//     if (IsKeyPressed(GLFW_KEY_SPACE) && audioSystem) {
-//         audioSystem->play("assets/audio/click_sounds/hat.wav", 1.0f);
-//     }
-// }
-
 
 #include "Input_Manager.h"
 #include "Audio_Manager.h"

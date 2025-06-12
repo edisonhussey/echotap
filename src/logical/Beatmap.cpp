@@ -36,15 +36,7 @@ std::vector<Tap> Beatmap::getTapsInWindow(float startTime, float endTime) const 
 }
 
 
-// std::vector<std::reference_wrapper<Tap>> Beatmap::getTapsInWindow(float startTime, float endTime) {
-//     std::vector<std::reference_wrapper<Tap>> result;
-//     for (Tap& t : taps) {
-//         if (t.start_window <= endTime && t.end_window >= startTime) {
-//             result.push_back(std::ref(t));
-//         }
-//     }
-//     return result;
-// }
+
 
 std::vector<std::reference_wrapper<Tap>> Beatmap::get_taps_in_window_reference(float startTime, float endTime) {
     std::vector<std::reference_wrapper<Tap>> result;

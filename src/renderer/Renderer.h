@@ -1,13 +1,9 @@
 
 
 
-// Add these member variables to your Renderer class
-
 
 #ifndef RENDERER_H
 #define RENDERER_H
-
-// Your entire Renderer.h content here
 
 
 #include "../logical/Beatmap.h"
@@ -41,14 +37,6 @@ private:
     // Circle rendering
     GLuint circleVAO, circleVBO;
     GLuint circleShaderProgram;
-
-    // Background rendering alll NEW 
-    // GLuint backgroundVAO, backgroundVBO;
-    // GLuint backgroundShaderProgram;
-    // GLuint backgroundTexture;
-    // bool initBackgroundShaders();
-    // void setupBackgroundBuffers();
-    // GLuint loadTexture(const std::string& path);
 
     // For background image
     GLuint bgVAO, bgVBO;
