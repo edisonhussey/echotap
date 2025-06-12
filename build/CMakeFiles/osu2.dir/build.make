@@ -184,10 +184,24 @@ CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/input_manager/Input_Manager.cpp -o CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.s
 
+CMakeFiles/osu2.dir/src/logical/Animations.cpp.o: CMakeFiles/osu2.dir/flags.make
+CMakeFiles/osu2.dir/src/logical/Animations.cpp.o: /Users/edisonhussey/Desktop/osu2/src/logical/Animations.cpp
+CMakeFiles/osu2.dir/src/logical/Animations.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/osu2.dir/src/logical/Animations.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Animations.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Animations.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Animations.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Animations.cpp
+
+CMakeFiles/osu2.dir/src/logical/Animations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/logical/Animations.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/logical/Animations.cpp > CMakeFiles/osu2.dir/src/logical/Animations.cpp.i
+
+CMakeFiles/osu2.dir/src/logical/Animations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/logical/Animations.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/logical/Animations.cpp -o CMakeFiles/osu2.dir/src/logical/Animations.cpp.s
+
 CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o: /Users/edisonhussey/Desktop/osu2/src/logical/Beatmap.cpp
 CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Beatmap.cpp
 
 CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.i: cmake_force
@@ -201,7 +215,7 @@ CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.s: cmake_force
 CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o: /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp
 CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp
 
 CMakeFiles/osu2.dir/src/logical/Prompt.cpp.i: cmake_force
@@ -215,7 +229,7 @@ CMakeFiles/osu2.dir/src/logical/Prompt.cpp.s: cmake_force
 CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o: /Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp
 CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp
 
 CMakeFiles/osu2.dir/src/logical/Quiz.cpp.i: cmake_force
@@ -229,7 +243,7 @@ CMakeFiles/osu2.dir/src/logical/Quiz.cpp.s: cmake_force
 CMakeFiles/osu2.dir/src/logical/Tap.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/logical/Tap.cpp.o: /Users/edisonhussey/Desktop/osu2/src/logical/Tap.cpp
 CMakeFiles/osu2.dir/src/logical/Tap.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/osu2.dir/src/logical/Tap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/osu2.dir/src/logical/Tap.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Tap.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Tap.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Tap.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Tap.cpp
 
 CMakeFiles/osu2.dir/src/logical/Tap.cpp.i: cmake_force
@@ -243,7 +257,7 @@ CMakeFiles/osu2.dir/src/logical/Tap.cpp.s: cmake_force
 CMakeFiles/osu2.dir/src/main.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/main.cpp.o: /Users/edisonhussey/Desktop/osu2/src/main.cpp
 CMakeFiles/osu2.dir/src/main.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/osu2.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/osu2.dir/src/main.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/main.cpp.o -MF CMakeFiles/osu2.dir/src/main.cpp.o.d -o CMakeFiles/osu2.dir/src/main.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/main.cpp
 
 CMakeFiles/osu2.dir/src/main.cpp.i: cmake_force
@@ -257,7 +271,7 @@ CMakeFiles/osu2.dir/src/main.cpp.s: cmake_force
 CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o: /Users/edisonhussey/Desktop/osu2/src/renderer/Renderer.cpp
 CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o -MF CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o.d -o CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/renderer/Renderer.cpp
 
 CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.i: cmake_force
@@ -271,7 +285,7 @@ CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.s: cmake_force
 CMakeFiles/osu2.dir/src/utils/shader.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/utils/shader.cpp.o: /Users/edisonhussey/Desktop/osu2/src/utils/shader.cpp
 CMakeFiles/osu2.dir/src/utils/shader.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/osu2.dir/src/utils/shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/osu2.dir/src/utils/shader.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/utils/shader.cpp.o -MF CMakeFiles/osu2.dir/src/utils/shader.cpp.o.d -o CMakeFiles/osu2.dir/src/utils/shader.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/utils/shader.cpp
 
 CMakeFiles/osu2.dir/src/utils/shader.cpp.i: cmake_force
@@ -292,6 +306,7 @@ osu2_OBJECTS = \
 "CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o" \
 "CMakeFiles/osu2.dir/src/generators/next_position.cpp.o" \
 "CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o" \
+"CMakeFiles/osu2.dir/src/logical/Animations.cpp.o" \
 "CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o" \
 "CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o" \
 "CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o" \
@@ -311,6 +326,7 @@ osu2: CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o
 osu2: CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o
 osu2: CMakeFiles/osu2.dir/src/generators/next_position.cpp.o
 osu2: CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o
+osu2: CMakeFiles/osu2.dir/src/logical/Animations.cpp.o
 osu2: CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o
 osu2: CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o
 osu2: CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o
@@ -323,7 +339,7 @@ osu2: /opt/homebrew/Cellar/glfw/3.4/lib/libglfw.dylib
 osu2: /opt/homebrew/lib/libsndfile.dylib
 osu2: /opt/homebrew/lib/libfreetype.dylib
 osu2: CMakeFiles/osu2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable osu2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable osu2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/osu2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

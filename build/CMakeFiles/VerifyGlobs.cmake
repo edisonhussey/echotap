@@ -21,6 +21,7 @@ set(OLD_GLOB
   "/Users/edisonhussey/Desktop/osu2/src/generators/filter_beats.cpp"
   "/Users/edisonhussey/Desktop/osu2/src/generators/next_position.cpp"
   "/Users/edisonhussey/Desktop/osu2/src/input_manager/Input_Manager.cpp"
+  "/Users/edisonhussey/Desktop/osu2/src/logical/Animations.cpp"
   "/Users/edisonhussey/Desktop/osu2/src/logical/Beatmap.cpp"
   "/Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp"
   "/Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp"

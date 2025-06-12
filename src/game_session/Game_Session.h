@@ -15,6 +15,13 @@ class Game_Session{
         Beatmap* beatmap; // Pointer to the Beatmap object
         Audio_Manager* audio_manager; // Pointer to the Audio_Manager object
 
+        float total_Score = 0.0f; // Total score for the game session
+        int combo = 0; // Current combo count
+        int max_combo = 0; // Maximum combo achieved in the session
+        
+
+
+
     public:
         explicit Game_Session(Beatmap* bm, Audio_Manager* audio);
 

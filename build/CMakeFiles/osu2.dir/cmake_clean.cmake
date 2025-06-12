@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/osu2.dir/src/generators/next_position.cpp.o.d"
   "CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o"
   "CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o.d"
+  "CMakeFiles/osu2.dir/src/logical/Animations.cpp.o"
+  "CMakeFiles/osu2.dir/src/logical/Animations.cpp.o.d"
   "CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o"
   "CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o.d"
   "CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o"

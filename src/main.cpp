@@ -9,6 +9,7 @@
 #include "Beatmap.h"
 #include "Tap.h"
 #include "Prompt.h"
+#include "Animations.h"
 
 #include "Map_Generator.h"
 #include "Renderer.h"
@@ -64,6 +65,8 @@ int main() {
 
     renderer.initBackground("assets/images/backgrounds/beatmap_background.png");
 
+ 
+    
 
     Game_Session game_session(&beatmap, &audio);
     
@@ -76,6 +79,10 @@ int main() {
 
     audio.play(musicPath, 0.1f); // start music
 
+    Animations animations;
+    animations.add_animation(std::make_unique<Text_Fade>(&renderer, 4.0f, 15.0f, 0.5f, 0.5f,
+        "Click to start!", 0.5f, Color(122, 122, 122)));
+
     float startTime = glfwGetTime();
     float lastClickTime = 0.0f;
     size_t beatIndex = 0;
@@ -87,13 +94,19 @@ int main() {
         float currentTime = glfwGetTime() - startTime;
 
         // Play click sounds at beat times
-        if (beatIndex < beats.size() && currentTime >= beats[beatIndex]) {
-            // audio.play(clickPath, 1.0f);
-            lastClickTime = beats[beatIndex];
-            beatIndex++;
-        }
+        // if (beatIndex < beats.size() && currentTime >= beats[beatIndex]) {
+        //     // audio.play(clickPath, 1.0f);
+        //     lastClickTime = beats[beatIndex];
+        //     beatIndex++;
+        //     // audio.play(clickPath, 1.0f);
+        // }
+        
+        renderer.render(beatmap, currentTime, animations);
 
-        renderer.render(beatmap, currentTime);
+        animations.update(currentTime);
+        // animations.render(renderer, currentTime);
+        // animations.remove_finished_animations();
+        // animations.remove_finished_animations();
     }
 
     return 0;

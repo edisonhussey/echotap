@@ -322,6 +322,30 @@ src/input_manager/Input_Manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/osu2.dir/build.make CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.s
 .PHONY : src/input_manager/Input_Manager.cpp.s
 
+src/logical/Animations.o: src/logical/Animations.cpp.o
+.PHONY : src/logical/Animations.o
+
+# target to build an object file
+src/logical/Animations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/osu2.dir/build.make CMakeFiles/osu2.dir/src/logical/Animations.cpp.o
+.PHONY : src/logical/Animations.cpp.o
+
+src/logical/Animations.i: src/logical/Animations.cpp.i
+.PHONY : src/logical/Animations.i
+
+# target to preprocess a source file
+src/logical/Animations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/osu2.dir/build.make CMakeFiles/osu2.dir/src/logical/Animations.cpp.i
+.PHONY : src/logical/Animations.cpp.i
+
+src/logical/Animations.s: src/logical/Animations.cpp.s
+.PHONY : src/logical/Animations.s
+
+# target to generate assembly for a file
+src/logical/Animations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/osu2.dir/build.make CMakeFiles/osu2.dir/src/logical/Animations.cpp.s
+.PHONY : src/logical/Animations.cpp.s
+
 src/logical/Beatmap.o: src/logical/Beatmap.cpp.o
 .PHONY : src/logical/Beatmap.o
 
@@ -523,6 +547,9 @@ help:
 	@echo "... src/input_manager/Input_Manager.o"
 	@echo "... src/input_manager/Input_Manager.i"
 	@echo "... src/input_manager/Input_Manager.s"
+	@echo "... src/logical/Animations.o"
+	@echo "... src/logical/Animations.i"
+	@echo "... src/logical/Animations.s"
 	@echo "... src/logical/Beatmap.o"
 	@echo "... src/logical/Beatmap.i"
 	@echo "... src/logical/Beatmap.s"

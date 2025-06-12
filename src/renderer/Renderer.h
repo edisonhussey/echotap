@@ -9,9 +9,11 @@
 #include "../logical/Beatmap.h"
 #include "../logical/Tap.h"
 #include "../logical/Prompt.h"
+#include "Animations.h"
 #include <GLFW/glfw3.h>
 #include <map>
 
+class Animations;
 
 struct Character {
     unsigned int TextureID;
@@ -64,12 +66,15 @@ public:
     void present();
     bool should_close();
     
-    void render(const Beatmap& map, float currentTime);
+    void render(const Beatmap& map, float currentTime, Animations& animations);
     void draw_circle(float cx, float cy, float r, const std::array<int, 4>& colour, bool filled);
     void drawTap(const Tap& t, float currentTime);
     void draw_prompt(const Prompt& p);
     void render_text(const std::string& text, float x, float y, float scale,
-                     float r, float g, float b, int screenWidth, int screenHeight);
+                     float r, float g, float b);
+                     
+    std::pair<float, float> get_pixel_coordinates_text(std::string text, float x, float y, float scale);
+    void render_text_2(float pixel_x, float pixel_y, std::string text,float scale, Color color);
 
     bool initFreeType();
 

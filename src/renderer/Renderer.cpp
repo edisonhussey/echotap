@@ -6,7 +6,8 @@
 #include <iostream>
 #include <cmath>
 #include <algorithm>
-
+#include <Animations.h>
+#include <color.h>
 #include <ft2build.h>
 #include FT_FREETYPE_H
 
@@ -15,6 +16,8 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
+
+#include "Animations.h"
 
 
 bool Renderer::initBackground(const std::string& imagePath) {
@@ -518,7 +521,7 @@ bool Renderer::should_close() {
     return glfwWindowShouldClose(window);
 }
 
-void Renderer::render(const Beatmap& map, float currentTime) {
+void Renderer::render(const Beatmap& map, float currentTime, Animations& animations) {
     clear();
 
     // Disable depth testing for 2D rendering
@@ -537,6 +540,8 @@ void Renderer::render(const Beatmap& map, float currentTime) {
             draw_prompt(p);
         }
     }
+
+    animations.render(*this, currentTime);
 
     present();
 }
@@ -589,8 +594,6 @@ void Renderer::drawTap(const Tap& t, float currentTime) {
     // Draw outer ring
     draw_circle(cx, cy, outerRadius, placeholderColor, false);
     
-    // Draw inner filled circle
-    // std::array<int, 4> innerColor = t.color;
     std::array<int, 4> innerColor = { t.color.r, t.color.g, t.color.b, t.color.a };
 
     draw_circle(cx, cy, innerRadius, innerColor, true);
@@ -623,17 +626,125 @@ void Renderer::drawTap(const Tap& t, float currentTime) {
             textX,
             textY,
             scale,
-            1.0f, 1.0f, 1.0f,  // white color
-            screenWidth,
-            screenHeight
+            1.0f, 1.0f, 1.0f  // white color
+    
+        
         );
     }
 
 }
 
+std::pair<float,float> Renderer::get_pixel_coordinates_text(std::string text, float x, float y, float scale){
+
+    float textWidth = 0.0f;
+    float textHeight = 0.0f;
+
+    float cx = x * screenWidth;
+    float cy = y * screenHeight;  
+
+    for (auto c : text) {
+
+        auto it = Characters.find(c);
+        if (it != Characters.end()) {
+            Character ch = it->second;
+            textWidth += (ch.Advance >> 6) * scale;
+            float charHeight = ch.SizeY * scale;
+            if (charHeight > textHeight) textHeight = charHeight;
+        }
+    }
+
+    // Center text at (cx, cy)
+    float textX = cx - textWidth / 2.0f;
+    float textY = cy + textHeight / 2.0f;  // Adjust this if your baseline is different
+
+    return std::pair<float, float>(textX, textY);
+   
+}
+
+void Renderer::render_text_2(float pixel_x, float pixel_y, const std::string text, float scale, Color color){
+
+    float r = color.r;
+    float g = color.g;
+    float b = color.b;
+
+    float x = pixel_x;  // Convert pixel coordinates to normalized coordinates
+    float y = pixel_y; // Convert pixel coordinates to normalized coordinates
+
+    std::cout << "[Renderer] Rendering text: " << text << " at (" << x << ", " << y << ") with scale " << scale << "\n";
+    int screenWidth = this->screenWidth;
+    int screenHeight = this->screenHeight;
+
+    // x= x* screenWidth;  // Convert normalized x to pixel coordinates
+    // y = y* screenHeight;  // Convert normalized y to pixel coordinates and flip Y
+
+    glUseProgram(textShaderProgram);
+    
+    // Use the SAME projection matrix as circles
+    float ortho[16] = {
+        2.0f / screenWidth, 0, 0, 0,
+        0, -2.0f / screenHeight, 0, 0,  // Negative to flip Y
+        0, 0, -1, 0,
+        -1, 1, 0, 1  // Adjusted for flipped Y
+    };
+    glUniformMatrix4fv(glGetUniformLocation(textShaderProgram, "projection"), 1, GL_FALSE, ortho);
+    
+    // Set text color
+    glUniform3f(glGetUniformLocation(textShaderProgram, "textColor"), r, g, b);
+    
+    glActiveTexture(GL_TEXTURE0);
+    glBindVertexArray(textVAO);
+
+    float currentX = x;
+    
+    for (auto c : text) {
+        auto it = Characters.find(c);
+        if (it == Characters.end()) continue;
+        
+        Character ch = it->second;
+
+        float xpos = currentX + ch.BearingX * scale;
+        // Fixed baseline - use y as the baseline and adjust each character relative to it
+        float ypos = y - ch.BearingY * scale;
+
+        float w = ch.SizeX * scale;
+        float h = ch.SizeY * scale;
+
+        // Vertices in screen pixel coordinates with flipped texture coordinates
+        float vertices[6][4] = {
+            { xpos,     ypos + h,   0.0f, 1.0f },
+            { xpos,     ypos,       0.0f, 0.0f },
+            { xpos + w, ypos,       1.0f, 0.0f },
+
+            { xpos,     ypos + h,   0.0f, 1.0f },
+            { xpos + w, ypos,       1.0f, 0.0f },
+            { xpos + w, ypos + h,   1.0f, 1.0f }
+        };
+
+        glBindTexture(GL_TEXTURE_2D, ch.TextureID);
+        glBindBuffer(GL_ARRAY_BUFFER, textVBO);
+        glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(vertices), vertices);
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        
+        glDrawArrays(GL_TRIANGLES, 0, 6);
+        
+        currentX += (ch.Advance >> 6) * scale;
+    }
+    
+    glBindVertexArray(0);
+    glBindTexture(GL_TEXTURE_2D, 0);
+}
+
 
 void Renderer::render_text(const std::string& text, float x, float y, float scale, 
-                          float r, float g, float b, int screenWidth, int screenHeight) {
+                          float r, float g, float b) {
+
+    std::cout << "[Renderer] Rendering text: " << text << " at (" << x << ", " << y << ") with scale " << scale << "\n";
+    int screenWidth = this->screenWidth;
+    int screenHeight = this->screenHeight;
+
+    // x= x* screenWidth;  // Convert normalized x to pixel coordinates
+    // y = y* screenHeight;  // Convert normalized y to pixel coordinates and flip Y
+
     glUseProgram(textShaderProgram);
     
     // Use the SAME projection matrix as circles
@@ -692,24 +803,30 @@ void Renderer::render_text(const std::string& text, float x, float y, float scal
 }
 
 void Renderer::draw_prompt(const Prompt& p) {
-    float cx = p.x * screenWidth;
-    float cy = (p.y) * screenHeight;  //open gl uses 0,0 as bottom left so we flip the y coordinate
 
-    // Draw the text near the circle
-    float textX = cx; // offset right of the circle
-    float textY = cy;  // slight vertical adjustment
+    auto [a,b] = get_pixel_coordinates_text(p.prompt_text, p.x, p.y, 0.5f);
+    render_text_2(a, b, p.prompt_text, 0.5f, Color(144,72,100, 1.0f));
 
-    // Only render text if Characters map is not empty
-    if (!Characters.empty()) {
-        render_text(
-            p.prompt_text,           // The prompt/question text
-            textX,
-            textY,
-            0.5f,             // scale factor (adjust based on desired size)
-            1.0f, 1.0f, 1.0f, // white color
-            screenWidth,
-            screenHeight
-        );
-    }
+
+
+    // float cx = p.x * screenWidth;
+    // float cy = (p.y) * screenHeight;  //open gl uses 0,0 as bottom left so we flip the y coordinate
+
+    // // Draw the text near the circle
+    // float textX = cx; // offset right of the circle
+    // float textY = cy;  // slight vertical adjustment
+
+    // // Only render text if Characters map is not empty
+    // if (!Characters.empty()) {
+    //     render_text(
+    //         p.prompt_text,           // The prompt/question text
+    //         textX,
+    //         textY,
+    //         // p.x,
+    //         // p.y,
+    //         0.5f,             // scale factor (adjust based on desired size)
+    //         1.0f, 1.0f, 1.0f // white color
+    //     );
+    // }
 }
 

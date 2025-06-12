@@ -807,6 +807,7 @@ CMakeFiles/osu2.dir/src/main.cpp.o: \
   /Users/edisonhussey/Desktop/osu2/src/utils/color.h \
   /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.h \
   /Users/edisonhussey/Desktop/osu2/src/generators/detect_beats.h \
+  /Users/edisonhussey/Desktop/osu2/src/logical/Animations.h \
   /Users/edisonhussey/Desktop/osu2/src/generators/Map_Generator.h \
   /Users/edisonhussey/Desktop/osu2/src/generators/../logical/Quiz.h \
   /Users/edisonhussey/Desktop/osu2/src/generators/../logical/Beatmap.h \

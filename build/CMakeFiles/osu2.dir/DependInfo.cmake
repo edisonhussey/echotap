@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/edisonhussey/Desktop/osu2/src/generators/filter_beats.cpp" "CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o" "gcc" "CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o.d"
   "/Users/edisonhussey/Desktop/osu2/src/generators/next_position.cpp" "CMakeFiles/osu2.dir/src/generators/next_position.cpp.o" "gcc" "CMakeFiles/osu2.dir/src/generators/next_position.cpp.o.d"
   "/Users/edisonhussey/Desktop/osu2/src/input_manager/Input_Manager.cpp" "CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o" "gcc" "CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o.d"
+  "/Users/edisonhussey/Desktop/osu2/src/logical/Animations.cpp" "CMakeFiles/osu2.dir/src/logical/Animations.cpp.o" "gcc" "CMakeFiles/osu2.dir/src/logical/Animations.cpp.o.d"
   "/Users/edisonhussey/Desktop/osu2/src/logical/Beatmap.cpp" "CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o" "gcc" "CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o.d"
   "/Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp" "CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o" "gcc" "CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o.d"
   "/Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp" "CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o" "gcc" "CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o.d"
