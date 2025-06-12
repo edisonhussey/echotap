@@ -76,211 +76,211 @@ CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o: /Users/edisonhussey/Desktop/osu2/dependencies/glad/src/gl.c
 CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o -MF CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o.d -o CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o -c /Users/edisonhussey/Desktop/osu2/dependencies/glad/src/gl.c
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o -MF CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o.d -o CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o -c /Users/edisonhussey/Desktop/osu2/dependencies/glad/src/gl.c
 
 CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/edisonhussey/Desktop/osu2/dependencies/glad/src/gl.c > CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/edisonhussey/Desktop/osu2/dependencies/glad/src/gl.c > CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.i
 
 CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/edisonhussey/Desktop/osu2/dependencies/glad/src/gl.c -o CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/edisonhussey/Desktop/osu2/dependencies/glad/src/gl.c -o CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.s
 
 CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o: /Users/edisonhussey/Desktop/osu2/src/audio_manager/Audio_Manager.cpp
 CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o -MF CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o.d -o CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/audio_manager/Audio_Manager.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o -MF CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o.d -o CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/audio_manager/Audio_Manager.cpp
 
 CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/audio_manager/Audio_Manager.cpp > CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/audio_manager/Audio_Manager.cpp > CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.i
 
 CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/audio_manager/Audio_Manager.cpp -o CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/audio_manager/Audio_Manager.cpp -o CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.s
 
 CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o: /Users/edisonhussey/Desktop/osu2/src/game_session/Game_Session.cpp
 CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o -MF CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o.d -o CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/game_session/Game_Session.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o -MF CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o.d -o CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/game_session/Game_Session.cpp
 
 CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/game_session/Game_Session.cpp > CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/game_session/Game_Session.cpp > CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.i
 
 CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/game_session/Game_Session.cpp -o CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/game_session/Game_Session.cpp -o CMakeFiles/osu2.dir/src/game_session/Game_Session.cpp.s
 
 CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o: /Users/edisonhussey/Desktop/osu2/src/generators/Map_Generator.cpp
 CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o -MF CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o.d -o CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/generators/Map_Generator.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o -MF CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o.d -o CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/generators/Map_Generator.cpp
 
 CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/generators/Map_Generator.cpp > CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/generators/Map_Generator.cpp > CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.i
 
 CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/generators/Map_Generator.cpp -o CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/generators/Map_Generator.cpp -o CMakeFiles/osu2.dir/src/generators/Map_Generator.cpp.s
 
 CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o: /Users/edisonhussey/Desktop/osu2/src/generators/detect_beats.cpp
 CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o -MF CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o.d -o CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/generators/detect_beats.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o -MF CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o.d -o CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/generators/detect_beats.cpp
 
 CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/generators/detect_beats.cpp > CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/generators/detect_beats.cpp > CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.i
 
 CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/generators/detect_beats.cpp -o CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/generators/detect_beats.cpp -o CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.s
 
 CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o: /Users/edisonhussey/Desktop/osu2/src/generators/filter_beats.cpp
 CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o -MF CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o.d -o CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/generators/filter_beats.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o -MF CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o.d -o CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/generators/filter_beats.cpp
 
 CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/generators/filter_beats.cpp > CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/generators/filter_beats.cpp > CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.i
 
 CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/generators/filter_beats.cpp -o CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/generators/filter_beats.cpp -o CMakeFiles/osu2.dir/src/generators/filter_beats.cpp.s
 
 CMakeFiles/osu2.dir/src/generators/next_position.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/generators/next_position.cpp.o: /Users/edisonhussey/Desktop/osu2/src/generators/next_position.cpp
 CMakeFiles/osu2.dir/src/generators/next_position.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/osu2.dir/src/generators/next_position.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/generators/next_position.cpp.o -MF CMakeFiles/osu2.dir/src/generators/next_position.cpp.o.d -o CMakeFiles/osu2.dir/src/generators/next_position.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/generators/next_position.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/generators/next_position.cpp.o -MF CMakeFiles/osu2.dir/src/generators/next_position.cpp.o.d -o CMakeFiles/osu2.dir/src/generators/next_position.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/generators/next_position.cpp
 
 CMakeFiles/osu2.dir/src/generators/next_position.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/generators/next_position.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/generators/next_position.cpp > CMakeFiles/osu2.dir/src/generators/next_position.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/generators/next_position.cpp > CMakeFiles/osu2.dir/src/generators/next_position.cpp.i
 
 CMakeFiles/osu2.dir/src/generators/next_position.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/generators/next_position.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/generators/next_position.cpp -o CMakeFiles/osu2.dir/src/generators/next_position.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/generators/next_position.cpp -o CMakeFiles/osu2.dir/src/generators/next_position.cpp.s
 
 CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o: /Users/edisonhussey/Desktop/osu2/src/input_manager/Input_Manager.cpp
 CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o -MF CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o.d -o CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/input_manager/Input_Manager.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o -MF CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o.d -o CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/input_manager/Input_Manager.cpp
 
 CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/input_manager/Input_Manager.cpp > CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/input_manager/Input_Manager.cpp > CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.i
 
 CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/input_manager/Input_Manager.cpp -o CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/input_manager/Input_Manager.cpp -o CMakeFiles/osu2.dir/src/input_manager/Input_Manager.cpp.s
 
 CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o: /Users/edisonhussey/Desktop/osu2/src/logical/Beatmap.cpp
 CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Beatmap.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Beatmap.cpp
 
 CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/logical/Beatmap.cpp > CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/logical/Beatmap.cpp > CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.i
 
 CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/logical/Beatmap.cpp -o CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/logical/Beatmap.cpp -o CMakeFiles/osu2.dir/src/logical/Beatmap.cpp.s
 
 CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o: /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp
 CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp
 
 CMakeFiles/osu2.dir/src/logical/Prompt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/logical/Prompt.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp > CMakeFiles/osu2.dir/src/logical/Prompt.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp > CMakeFiles/osu2.dir/src/logical/Prompt.cpp.i
 
 CMakeFiles/osu2.dir/src/logical/Prompt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/logical/Prompt.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp -o CMakeFiles/osu2.dir/src/logical/Prompt.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp -o CMakeFiles/osu2.dir/src/logical/Prompt.cpp.s
 
 CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o: /Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp
 CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp
 
 CMakeFiles/osu2.dir/src/logical/Quiz.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/logical/Quiz.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp > CMakeFiles/osu2.dir/src/logical/Quiz.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp > CMakeFiles/osu2.dir/src/logical/Quiz.cpp.i
 
 CMakeFiles/osu2.dir/src/logical/Quiz.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/logical/Quiz.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp -o CMakeFiles/osu2.dir/src/logical/Quiz.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp -o CMakeFiles/osu2.dir/src/logical/Quiz.cpp.s
 
 CMakeFiles/osu2.dir/src/logical/Tap.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/logical/Tap.cpp.o: /Users/edisonhussey/Desktop/osu2/src/logical/Tap.cpp
 CMakeFiles/osu2.dir/src/logical/Tap.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/osu2.dir/src/logical/Tap.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Tap.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Tap.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Tap.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Tap.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/logical/Tap.cpp.o -MF CMakeFiles/osu2.dir/src/logical/Tap.cpp.o.d -o CMakeFiles/osu2.dir/src/logical/Tap.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/logical/Tap.cpp
 
 CMakeFiles/osu2.dir/src/logical/Tap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/logical/Tap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/logical/Tap.cpp > CMakeFiles/osu2.dir/src/logical/Tap.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/logical/Tap.cpp > CMakeFiles/osu2.dir/src/logical/Tap.cpp.i
 
 CMakeFiles/osu2.dir/src/logical/Tap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/logical/Tap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/logical/Tap.cpp -o CMakeFiles/osu2.dir/src/logical/Tap.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/logical/Tap.cpp -o CMakeFiles/osu2.dir/src/logical/Tap.cpp.s
 
 CMakeFiles/osu2.dir/src/main.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/main.cpp.o: /Users/edisonhussey/Desktop/osu2/src/main.cpp
 CMakeFiles/osu2.dir/src/main.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/osu2.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/main.cpp.o -MF CMakeFiles/osu2.dir/src/main.cpp.o.d -o CMakeFiles/osu2.dir/src/main.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/main.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/main.cpp.o -MF CMakeFiles/osu2.dir/src/main.cpp.o.d -o CMakeFiles/osu2.dir/src/main.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/main.cpp
 
 CMakeFiles/osu2.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/main.cpp > CMakeFiles/osu2.dir/src/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/main.cpp > CMakeFiles/osu2.dir/src/main.cpp.i
 
 CMakeFiles/osu2.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/main.cpp -o CMakeFiles/osu2.dir/src/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/main.cpp -o CMakeFiles/osu2.dir/src/main.cpp.s
 
 CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o: /Users/edisonhussey/Desktop/osu2/src/renderer/Renderer.cpp
 CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o -MF CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o.d -o CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/renderer/Renderer.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o -MF CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o.d -o CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/renderer/Renderer.cpp
 
 CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/renderer/Renderer.cpp > CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/renderer/Renderer.cpp > CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.i
 
 CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/renderer/Renderer.cpp -o CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/renderer/Renderer.cpp -o CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.s
 
 CMakeFiles/osu2.dir/src/utils/shader.cpp.o: CMakeFiles/osu2.dir/flags.make
 CMakeFiles/osu2.dir/src/utils/shader.cpp.o: /Users/edisonhussey/Desktop/osu2/src/utils/shader.cpp
 CMakeFiles/osu2.dir/src/utils/shader.cpp.o: CMakeFiles/osu2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/edisonhussey/Desktop/osu2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/osu2.dir/src/utils/shader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/utils/shader.cpp.o -MF CMakeFiles/osu2.dir/src/utils/shader.cpp.o.d -o CMakeFiles/osu2.dir/src/utils/shader.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/utils/shader.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/osu2.dir/src/utils/shader.cpp.o -MF CMakeFiles/osu2.dir/src/utils/shader.cpp.o.d -o CMakeFiles/osu2.dir/src/utils/shader.cpp.o -c /Users/edisonhussey/Desktop/osu2/src/utils/shader.cpp
 
 CMakeFiles/osu2.dir/src/utils/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/osu2.dir/src/utils/shader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/utils/shader.cpp > CMakeFiles/osu2.dir/src/utils/shader.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/edisonhussey/Desktop/osu2/src/utils/shader.cpp > CMakeFiles/osu2.dir/src/utils/shader.cpp.i
 
 CMakeFiles/osu2.dir/src/utils/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/osu2.dir/src/utils/shader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/utils/shader.cpp -o CMakeFiles/osu2.dir/src/utils/shader.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/edisonhussey/Desktop/osu2/src/utils/shader.cpp -o CMakeFiles/osu2.dir/src/utils/shader.cpp.s
 
 # Object files for target osu2
 osu2_OBJECTS = \
