@@ -1,19 +1,35 @@
+#pragma once
 #include "Beatmap.h"
 #include <algorithm>
 #include <iostream> // for std::cout
-
+#include "Tap.h"
+#include "Prompt.h"
+#include <utility>
 // Constructor
-Beatmap::Beatmap(std::vector<Tap> taps_, std::vector<Prompt> prompts_)
-    : taps(std::move(taps_)), prompts(std::move(prompts_)) {
+// Beatmap::Beatmap(std::vector<Tap> taps_, std::vector<Prompt> prompts_, context* context)
+//     : taps(std::move(taps_)), prompts(std::move(prompts_)), ctx(context)
+// {
 
-    std::sort(taps.begin(), taps.end(), [](const Tap& a, const Tap& b) {
-        return a.perfect_hit_time < b.perfect_hit_time;
-    });
+Beatmap::Beatmap(std::vector<Tap> taps_, std::vector<Prompt> prompts_, context* context)
+    : taps(std::move(taps_)), prompts(std::move(prompts_)), ctx(context)
+{}
 
-    std::sort(prompts.begin(), prompts.end(), [](const Prompt& a, const Prompt& b) {
-        return a.start_window < b.start_window;
-    });
-}
+
+//     std::sort(taps.begin(), taps.end(), [](const Tap& a, const Tap& b) {
+//         return a.perfect_hit_time < b.perfect_hit_time;
+//     });
+
+//     std::sort(prompts.begin(), prompts.end(), [](const Prompt& a, const Prompt& b) {
+//         return a.start_window < b.start_window;
+//     });
+// }
+
+// Beatmap::Beatmap(std::vector<Tap> taps_, std::vector<Prompt> prompts_, context* context)
+//     : taps(std::move(taps_)), prompts(std::move(prompts_)), ctx(context)
+// {
+//     // No sorting here
+// }
+
 
 // Print beatmap contents (optional)
 void Beatmap::print() const {
@@ -24,6 +40,22 @@ void Beatmap::print() const {
         std::cout << "Prompt: " << p.prompt_text << " | Time: " << p.start_window << "\n";
     }
 }
+
+void Beatmap::setTaps(std::vector<Tap> taps_) {
+    taps = std::move(taps_);
+    std::sort(taps.begin(), taps.end(), [](const Tap& a, const Tap& b) {
+        return a.perfect_hit_time < b.perfect_hit_time;
+
+    });
+}
+
+void Beatmap::setPrompts(std::vector<Prompt> prompts_) {
+    prompts = std::move(prompts_);
+    std::sort(prompts.begin(), prompts.end(), [](const Prompt& a, const Prompt& b) {
+        return a.start_window < b.start_window;
+    });
+}
+
 
 
 std::vector<Tap> Beatmap::getTapsInWindow(float startTime, float endTime) const {

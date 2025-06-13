@@ -11,7 +11,7 @@ class Map_Generator {
         Map_Generator();
         ~Map_Generator();
 
-        Beatmap create_map(
+        std::pair<std::vector<Tap>, std::vector<Prompt>> create_map(
             float difficulty,  // 0.0 to 1.0
             float sensitivity, // 0.0 to 1.0 
             

@@ -1,6 +1,6 @@
 CMakeFiles/osu2.dir/src/generators/detect_beats.cpp.o: \
-  /Users/edisonhussey/Desktop/osu2/src/generators/detect_beats.cpp \
-  /Users/edisonhussey/Desktop/osu2/src/generators/detect_beats.h \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/generators/detect_beats.cpp \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/generators/detect_beats.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \

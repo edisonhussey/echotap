@@ -1,6 +1,6 @@
 CMakeFiles/osu2.dir/src/logical/Prompt.cpp.o: \
-  /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.cpp \
-  /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.h \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/logical/Prompt.cpp \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/logical/Prompt.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \

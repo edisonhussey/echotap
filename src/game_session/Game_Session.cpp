@@ -5,47 +5,30 @@
 #include "Renderer.h"
 #include "Animations.h"
 #include <iostream>
+#include "context.h"
 
-// Game_Session::Game_Session(Beatmap* bm, Audio_Manager* audio, Renderer* renderer, Animations& animations)
-//     : beatmap(bm), audio_manager(audio), renderer(renderer), animations(animations) {}
 
-// Game_Session::link_beatmap(Beatmap* bm) {
-//     beatmap = bm; // Link the beatmap to the game session
-// }
+Game_Session::Game_Session(context* context)
+    : ctx(context)
+{
 
-Game_Session::Game_Session(Beatmap* bm, Audio_Manager* audio, Renderer* renderer, Animations* animations)
-    : beatmap(bm), audio_manager(audio), renderer(renderer), animations(animations) {}
-    // if (!beatmap || !audio_manager || !renderer) {
-    //     std::cerr << "Error: Game_Session initialization failed due to null pointers." << std::endl;
-    // }
-void Game_Session::link_beatmap(Beatmap* bm) {
-    if (bm) {
-        beatmap = bm; // Link the beatmap to the game session
-    } else {
-        std::cerr << "Error: Attempted to link a null Beatmap." << std::endl;
-    }
 }
 
-void Game_Session::link_audio(Audio_Manager* audio) {
-    if (audio) {
-        audio_manager = audio; // Link the audio manager to the game session
-    } else {
-        std::cerr << "Error: Attempted to link a null Audio_Manager." << std::endl;
+
+void Game_Session::init() {
+    if (!ctx || !ctx->beatmap || !ctx->audio_manager || !ctx->renderer) {
+        std::cerr << "Error: Game_Session context or beatmap is not initialized." << std::endl;
+        return;
     }
-}
-void Game_Session::link_renderer(Renderer* renderer) {
-    if (renderer) {
-        this->renderer = renderer; // Link the renderer to the game session
-    } else {
-        std::cerr << "Error: Attempted to link a null Renderer." << std::endl;
-    }
-}
-void Game_Session::link_animations(Animations* animations) {
-    if (animations) {
-        this->animations = *animations; // Link the animations to the game session
-    } else {
-        std::cerr << "Error: Attempted to link a null Animations." << std::endl;
-    }
+
+    // Initialize game session variables
+    total_Score = 0.0f;
+    combo = 0;
+    max_combo = 0;
+
+    // Add initialization text animation
+
+    // Additional initialization logic can go here
 }
 
 void Game_Session::click_x_y(float x, float y, float time) {
@@ -55,7 +38,12 @@ void Game_Session::click_x_y(float x, float y, float time) {
 
 
 
-    std::vector<std::reference_wrapper<Tap>> taps_in_window = beatmap->get_taps_in_window_reference(window_start, window_end);
+    if (!ctx || !ctx->beatmap || !ctx->audio_manager || !ctx->renderer) {
+        std::cerr << "Error: Game_Session context or beatmap is not initialized." << std::endl;
+        return;
+    }
+    
+    std::vector<std::reference_wrapper<Tap>> taps_in_window = ctx->beatmap->get_taps_in_window_reference(window_start, window_end);
 
     for (int i=taps_in_window.size()-1;i>=0;i--){
 
@@ -73,29 +61,54 @@ void Game_Session::click_x_y(float x, float y, float time) {
 
 
             float score = grader(tap.end_window - tap.start_window, diff);
-            tap.score = score; // Set the score based on grading function
+
+            tap.score = score; //Set the score based on grading function
             total_Score += score; // Update total score
             combo++; // Increment combo count
+
             if (combo > max_combo) {
                 max_combo = combo; // Update max combo if current is greater
             }
 
             tap.actual_hit_time = time; // Set actual hit time
-            audio_manager->play("assets/audio/click_sounds/hat.wav", 1.0f); // Play hit sound
-            tap.color = {0, 255, 0, 255}; // Change color to green on hit
+            ctx->audio_manager->play("assets/audio/click_sounds/hat.wav", 1.0f); // Play hit sound
+            // tap.color = {0, 255, 0, 255}; // Change color to green on hit // 
 
 
-            renderer->simple_render_text(
-                tap.x, tap.y, std::to_string(tap.score), 0.8f, Color(0, 255, 0, 100)
-            ); // Render hit text
-            break;
+            // ctx->renderer->simple_render_text(
+            //     tap.x, tap.y, std::to_string(tap.score), 0.8f, Color(0, 255, 0, 100)
+            // ); // Render hit text
+
+            ctx->animations->add_animation(
+                std::make_unique<Text_Fade>(
+                    ctx->renderer, ctx->game_time, (ctx->game_time)+2, tap.x, tap.y,
+                    std::to_string(tap.score), 0.6f, Color(0, 170, 0, 100)
+
+                )
+            ); // Add hit text animation
+            return;
         }
+
     }
+
+
+    total_Score-= 50;
+    combo = 0; // Reset combo on miss
+
+    ctx->animations->add_animation(
+        std::make_unique<Text_Fade>(
+            ctx->renderer, ctx->game_time, (ctx->game_time)+2, x, y,
+            "Miss", 0.4f, Color(255, 0, 0, 100)
+        )
+    ); // Add miss text animation
+
+
+
 }
 
 
 
-int grader(float abs_plus_minus_hit_window, float time_difference) {
+int Game_Session::grader(float abs_plus_minus_hit_window, float time_difference) {
     // Calculate the difference between the perfect hit time and the actual hit time
     if (time_difference < abs_plus_minus_hit_window * 0.1f) {
         return 100; // Perfect hit

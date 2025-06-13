@@ -1,6 +1,6 @@
 CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o: \
-  /Users/edisonhussey/Desktop/osu2/src/audio_manager/Audio_Manager.cpp \
-  /Users/edisonhussey/Desktop/osu2/src/audio_manager/../../dependencies/miniaudio.h \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/audio_manager/Audio_Manager.cpp \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/audio_manager/../../dependencies/miniaudio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -472,7 +472,7 @@ CMakeFiles/osu2.dir/src/audio_manager/Audio_Manager.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AUMIDIController.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/CoreAudioClock.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioSession.h \
-  /Users/edisonhussey/Desktop/osu2/src/audio_manager/Audio_Manager.h \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/audio_manager/Audio_Manager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \

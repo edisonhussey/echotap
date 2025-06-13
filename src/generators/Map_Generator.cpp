@@ -1,16 +1,17 @@
-
+#pragma once
 
 
 #include "Map_Generator.h"
 #include "detect_beats.h" // Include beat detection function
 #include "filter_beats.h" // Include beat filtering function
-#include "../logical/Beatmap.h"
-#include "../logical/Quiz.h"  // Include quiz definition
+#include "Beatmap.h"
+#include "Quiz.h"  // Include quiz definition
 #include <algorithm>           // for std::min
 #include <vector>
 #include <string>
 #include <unordered_set>    // for std::unordered_set
 #include "next_position.h"
+
 
 // Constructor
 Map_Generator::Map_Generator() {
@@ -21,7 +22,7 @@ Map_Generator::Map_Generator() {
 Map_Generator::~Map_Generator() {
     // any cleanup if needed
 }
-Beatmap Map_Generator::create_map(
+std::pair<std::vector<Tap>, std::vector<Prompt>> Map_Generator::create_map(
     float difficulty,
     float sensitivity,
     const std::string& backgroundImage,
@@ -146,8 +147,16 @@ Beatmap Map_Generator::create_map(
         }
     }
 
-    Beatmap map(taps, prompts);
+    // Beatmap map(taps, prompts);
 
-    return map; // no extra parentheses
+    // return map; // no extra parentheses
+    // return std::pair<std::vector<Tap> , std::vector<Prompt> >(taps, prompts); // Return both taps and prompts
+    // return std::pair<Beatmap, Quiz>(Beatmap(taps, prompts), question_set); // Return both Beatmap and Quiz
+
+    // std::pair <std::vector<Tap> , std::vector<Prompt>  > result = std::make_pair(taps, prompts);
+    // return result;
+
+    return std::make_pair(taps, prompts);
+
 }
 

@@ -1,6 +1,6 @@
 CMakeFiles/osu2.dir/src/generators/next_position.cpp.o: \
-  /Users/edisonhussey/Desktop/osu2/src/generators/next_position.cpp \
-  /Users/edisonhussey/Desktop/osu2/src/generators/next_position.h \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/generators/next_position.cpp \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/generators/next_position.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h \

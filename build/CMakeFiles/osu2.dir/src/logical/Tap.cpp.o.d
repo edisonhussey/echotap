@@ -1,7 +1,7 @@
 CMakeFiles/osu2.dir/src/logical/Tap.cpp.o: \
-  /Users/edisonhussey/Desktop/osu2/src/logical/Tap.cpp \
-  /Users/edisonhussey/Desktop/osu2/src/logical/Tap.h \
-  /Users/edisonhussey/Desktop/osu2/src/utils/color.h \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/logical/Tap.cpp \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/logical/Tap.h \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/utils/color.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \

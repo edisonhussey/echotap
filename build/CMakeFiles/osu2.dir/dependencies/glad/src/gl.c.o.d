@@ -1,5 +1,5 @@
 CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o: \
-  /Users/edisonhussey/Desktop/osu2/dependencies/glad/src/gl.c \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/dependencies/glad/src/gl.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_bounds.h \
@@ -92,5 +92,5 @@ CMakeFiles/osu2.dir/dependencies/glad/src/gl.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_string.h \
-  /Users/edisonhussey/Desktop/osu2/dependencies/glad/src/../include/glad/gl.h \
-  /Users/edisonhussey/Desktop/osu2/dependencies/glad/include/KHR/khrplatform.h
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/dependencies/glad/src/../include/glad/gl.h \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/dependencies/glad/include/KHR/khrplatform.h

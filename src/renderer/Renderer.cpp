@@ -12,6 +12,7 @@
 #include FT_FREETYPE_H
 
 #include "Renderer.h"
+#include "Game_Session.h"
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -399,11 +400,18 @@ bool Renderer::initFreeType() {
     return true;
 }
 
-Renderer::Renderer(int w, int h)
-    : screenWidth(w), screenHeight(h), window(nullptr), 
+// Renderer::Renderer(int w, int h)
+//     : screenWidth(w), screenHeight(h), window(nullptr), 
+//       textVAO(0), textVBO(0), textShaderProgram(0),
+//       circleVAO(0), circleVBO(0), circleShaderProgram(0)
+// {
+//     // Constructor initialization
+// }
+Renderer::Renderer(int w, int h, context *ctx)
+    : screenWidth(w), screenHeight(h), ctx(ctx), window(nullptr),
       textVAO(0), textVBO(0), textShaderProgram(0),
-      circleVAO(0), circleVBO(0), circleShaderProgram(0)
-{
+      circleVAO(0), circleVBO(0), circleShaderProgram(0),
+      bgVAO(0), bgVBO(0), bgShaderProgram(0), bgTexture(0) {
     // Constructor initialization
 }
 
@@ -543,6 +551,14 @@ void Renderer::render(const Beatmap& map, float currentTime, Animations& animati
 
     animations.render(*this, currentTime);
 
+    if (ctx->game_session) {
+         simple_render_text(0.15f, 0.10f, "Score: " + std::to_string(static_cast<int>(ctx->game_session->total_Score)), 0.7f, Color(255, 255, 255));
+        simple_render_text(0.15f, 0.15f, "Combo: " + std::to_string(ctx->game_session->combo) + " (Max: " + std::to_string(ctx->game_session->max_combo) + ")", 0.4f, Color(255, 255, 255));
+        // simple_render_text(0.05f, 0.85f, "FPS: " + std::to_string(static_cast<int>(1.0f / ctx->game_session->delta_time)), 0.5f, Color(255, 255, 255));
+        simple_render_text(0.05f, 0.80f, "Time: " + std::to_string(static_cast<int>(currentTime)) + "s", 0.5f, Color(255, 255, 255));
+
+    }
+   
     present();
 }
 
@@ -681,7 +697,7 @@ void Renderer::render_text_2(float pixel_x, float pixel_y, const std::string tex
     float x = pixel_x;  // Convert pixel coordinates to normalized coordinates
     float y = pixel_y; // Convert pixel coordinates to normalized coordinates
 
-    std::cout << "[Renderer] Rendering text: " << text << " at (" << x << ", " << y << ") with scale " << scale << "\n";
+    // std::cout << "[Renderer] Rendering text: " << text << " at (" << x << ", " << y << ") with scale " << scale << "\n";
     int screenWidth = this->screenWidth;
     int screenHeight = this->screenHeight;
 

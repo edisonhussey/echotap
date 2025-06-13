@@ -1,5 +1,6 @@
 #include "Animations.h"
 #include "Renderer.h"  // Now we can use Renderer methods
+#include "context.h"
 
 Text_Fade::Text_Fade(Renderer* r, float start, float end, float x, float y,
                      const std::string& t, float sz, Color c)
@@ -40,3 +41,5 @@ void Animations::render(Renderer& renderer, float current_time) {
         }
     }
 }
+
+Animations::Animations(context* ctx) : ctx(ctx) {}

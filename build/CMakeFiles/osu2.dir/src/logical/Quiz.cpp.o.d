@@ -1,6 +1,6 @@
 CMakeFiles/osu2.dir/src/logical/Quiz.cpp.o: \
-  /Users/edisonhussey/Desktop/osu2/src/logical/Quiz.cpp \
-  /Users/edisonhussey/Desktop/osu2/src/logical/Quiz.h \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/logical/Quiz.cpp \
+  /Users/edisonhussey/Desktop/experiment_osu/echotap/src/logical/Quiz.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \

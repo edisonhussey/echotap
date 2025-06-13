@@ -5,9 +5,10 @@
       "includePath": [
         "${workspaceFolder}/**",
         "/opt/homebrew/include",                 
-        "${workspaceFolder}/glad/include",     
+        "${workspaceFolder}/dependencies/glad/include",     
         "/usr/local/include",                     
-        "/Library/Developer/CommandLineTools/usr/include/c++/v1",
+
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1",
         "/opt/homebrew/opt/glfw",
         "/opt/homebrew/opt/glfw/include",
         "/opt/homebrew/opt/freetype/include/freetype2"
@@ -25,7 +26,7 @@
         "path": [
           "${workspaceFolder}",
           "/opt/homebrew/include",
-          "${workspaceFolder}/glad/include",
+          "${workspaceFolder}/dependencies/glad/include",
           "/opt/homebrew/opt/glfw/include"
         ],
         "limitSymbolsToIncludedHeaders": true,

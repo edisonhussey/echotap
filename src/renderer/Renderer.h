@@ -6,14 +6,15 @@
 #define RENDERER_H
 
 
-#include "../logical/Beatmap.h"
-#include "../logical/Tap.h"
-#include "../logical/Prompt.h"
+#include "logical/Beatmap.h"
+#include "logical/Tap.h"
+#include "Prompt.h"
 #include "Animations.h"
 #include <GLFW/glfw3.h>
 #include <map>
+#include "context.h"
 
-class Animations;
+// class Animations;
 
 struct Character {
     unsigned int TextureID;
@@ -27,8 +28,9 @@ struct Character {
 class Renderer {
 private:
 
-
+    context* ctx;
     GLFWwindow* window;
+
     int screenWidth, screenHeight;
     
     // Text rendering
@@ -55,7 +57,7 @@ private:
 
 
 public:
-    Renderer(int w, int h);
+    Renderer(int w, int h, context *ctx);
     ~Renderer();
 
     GLFWwindow* get_window() const;

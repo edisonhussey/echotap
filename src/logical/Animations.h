@@ -152,6 +152,7 @@
 #include <vector>
 #include <memory>
 #include <color.h>
+#include "context.h"
 
 class Renderer;  // Forward declaration
 
@@ -191,12 +192,15 @@ public:
 };
 
 class Animations {
-private:
-    std::vector<std::unique_ptr<Animation>> animations;
+    private:
+        std::vector<std::unique_ptr<Animation>> animations;
 
-public:
-    void add_animation(std::unique_ptr<Animation> animation);
-    void update(float current_time);
-    void remove_finished_animations();
-    void render(Renderer& renderer, float current_time);
+
+    public:
+        context* ctx;
+        void add_animation(std::unique_ptr<Animation> animation);
+        void update(float current_time);
+        void remove_finished_animations();
+        void render(Renderer& renderer, float current_time);
+        Animations(context* ctx);
 };
