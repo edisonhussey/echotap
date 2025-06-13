@@ -601,35 +601,40 @@ void Renderer::drawTap(const Tap& t, float currentTime) {
 
 
     if (!t.text.empty()) {
-        float scale = 0.5f;
 
-        // Calculate text width and height in pixels (scaled)
-        float textWidth = 0.0f;
-        float textHeight = 0.0f;
 
-        for (auto c : t.text) {
-            auto it = Characters.find(c);
-            if (it != Characters.end()) {
-                Character ch = it->second;
-                textWidth += (ch.Advance >> 6) * scale;
-                float charHeight = ch.SizeY * scale;
-                if (charHeight > textHeight) textHeight = charHeight;
-            }
-        }
+        auto [a,b] = get_pixel_coordinates_text(t.text, t.x, t.y, 0.5f);
+        render_text_2(a, b, t.text, 0.5f, t.color);
 
-        // Center text at (cx, cy)
-        float textX = cx - textWidth / 2.0f;
-        float textY = cy + textHeight / 2.0f;  // Adjust this if your baseline is different
+        // float scale = 0.5f;
 
-        render_text(
-            t.text,
-            textX,
-            textY,
-            scale,
-            1.0f, 1.0f, 1.0f  // white color
+        // // Calculate text width and height in pixels (scaled)
+        // float textWidth = 0.0f;
+        // float textHeight = 0.0f;
+
+        // for (auto c : t.text) {
+        //     auto it = Characters.find(c);
+        //     if (it != Characters.end()) {
+        //         Character ch = it->second;
+        //         textWidth += (ch.Advance >> 6) * scale;
+        //         float charHeight = ch.SizeY * scale;
+        //         if (charHeight > textHeight) textHeight = charHeight;
+        //     }
+        // }
+
+        // // Center text at (cx, cy)
+        // float textX = cx - textWidth / 2.0f;
+        // float textY = cy + textHeight / 2.0f;  // Adjust this if your baseline is different
+
+        // render_text(
+        //     t.text,
+        //     textX,
+        //     textY,
+        //     scale,
+        //     1.0f, 1.0f, 1.0f  // white color
     
         
-        );
+        // );
     }
 
 }
@@ -659,6 +664,12 @@ std::pair<float,float> Renderer::get_pixel_coordinates_text(std::string text, fl
 
     return std::pair<float, float>(textX, textY);
    
+}
+
+
+void Renderer::simple_render_text(float x, float y, const std::string& text, float scale, Color color) {
+    auto [a,b] = get_pixel_coordinates_text(text, x, y, scale);
+    render_text_2(a, b, text, scale, color);
 }
 
 void Renderer::render_text_2(float pixel_x, float pixel_y, const std::string text, float scale, Color color){

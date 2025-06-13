@@ -6,7 +6,9 @@ Text_Fade::Text_Fade(Renderer* r, float start, float end, float x, float y,
     : Animation(r, start, end, x, y), text(t), size(sz), color(c) {}
 
 void Text_Fade::render(float current_time) {
-    renderer->render_text(text, x*1440, y*900, size, color.r, color.g, color.b);
+    // renderer->render_text(text, x*1440, y*900, size, color.r, color.g, color.b);
+    renderer->simple_render_text(x, y, text, size, color);
+
 }
 
 // Implement Animations methods too...

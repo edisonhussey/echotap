@@ -72,9 +72,10 @@ public:
     void draw_prompt(const Prompt& p);
     void render_text(const std::string& text, float x, float y, float scale,
                      float r, float g, float b);
-                     
+
     std::pair<float, float> get_pixel_coordinates_text(std::string text, float x, float y, float scale);
     void render_text_2(float pixel_x, float pixel_y, std::string text,float scale, Color color);
+    void simple_render_text(float x, float y, const std::string& text, float scale, Color color);
 
     bool initFreeType();
 

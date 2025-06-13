@@ -11458,7 +11458,6 @@ CMakeFiles/osu2.dir/src/renderer/Renderer.cpp.o: /Users/edisonhussey/Desktop/osu
   /Users/edisonhussey/Desktop/osu2/src/logical/Prompt.h \
   /Users/edisonhussey/Desktop/osu2/src/logical/Tap.h \
   /Users/edisonhussey/Desktop/osu2/src/renderer/Renderer.h \
-  /Users/edisonhussey/Desktop/osu2/src/utils/Color.h \
   /Users/edisonhussey/Desktop/osu2/src/utils/color.h \
   /opt/homebrew/include/GLFW/glfw3.h \
   /opt/homebrew/include/freetype2/freetype/config/ftconfig.h \
@@ -13551,8 +13550,6 @@ CMakeFiles/osu2.dir/src/utils/shader.cpp.o: /Users/edisonhussey/Desktop/osu2/src
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/machine/_types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h:
-
-/Users/edisonhussey/Desktop/osu2/src/utils/Color.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/simd_utils.h:
 

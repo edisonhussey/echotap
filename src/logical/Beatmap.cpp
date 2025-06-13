@@ -38,6 +38,16 @@ std::vector<Tap> Beatmap::getTapsInWindow(float startTime, float endTime) const 
 
 
 
+// std::vector<std::reference_wrapper<Tap>> Beatmap::get_taps_in_window_reference(float startTime, float endTime) {
+//     std::vector<std::reference_wrapper<Tap>> result;
+//     for (Tap& t : taps) {
+//         if (t.start_window <= endTime && t.end_window >= startTime) {
+//             result.push_back(std::ref(t));
+//         }
+//     }
+//     return result;
+// }
+
 std::vector<std::reference_wrapper<Tap>> Beatmap::get_taps_in_window_reference(float startTime, float endTime) {
     std::vector<std::reference_wrapper<Tap>> result;
     for (Tap& t : taps) {
@@ -45,9 +55,13 @@ std::vector<std::reference_wrapper<Tap>> Beatmap::get_taps_in_window_reference(f
             result.push_back(std::ref(t));
         }
     }
+    // Sort by perfect_hit_time, latest to earliest
+    std::sort(result.begin(), result.end(), 
+        [](const std::reference_wrapper<Tap>& a, const std::reference_wrapper<Tap>& b) {
+            return a.get().perfect_hit_time > b.get().perfect_hit_time; // Latest first
+        });
     return result;
 }
-
 
 
 // Get prompts in a time window
